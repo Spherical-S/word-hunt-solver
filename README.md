@@ -14,14 +14,19 @@ from left to right, row by row from top to bottom. For eg
 if the board is as follows, you write "abcdefghijklmnop"
 
 ABCD
+
 EFGH
+
 IJKL
+
 MNOP
 
-The app will output the biggest words at the bottom, if you are
-confused on how to get the word, put the number corresponding
-to the word in the GUI application for a "map" on how to get the
-word.
+
+The app will output the biggest words at the bottom.
+if you are confused on how to get the word, put the number corresponding
+to the word in the GUI application for a "map" on how to get the word.
+
+# Notes
 
 Please note that word hunt does not have an official list of words that work
 so a some of the words that the app gives you will not work when you type it
