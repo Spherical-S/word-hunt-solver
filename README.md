@@ -1,8 +1,8 @@
 # Word Hunt Solver
 An app to help you cheat in the game pigeon word hunt game.
 
-Doesn't work that well in practice because of word hunts 1 minute time limit
-but it is helpful to get those big words for massive amounts of points.
+Can work against real players but you must be quick because of
+the games 1 minute time limit!
 
 # How To Run
 Just download all files in the repository and run main.py
