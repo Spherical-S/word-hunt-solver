@@ -105,10 +105,14 @@ def set_map():
     
     for i in range(4):
         for j in range(4):
-            button_grid[i][j].configure(bg=BLACK)
+            for widget in button_grid[i][j].winfo_children():
+                widget.destroy()
 
+    count = 0
     for i in get_directions(word_maps[printed_list[index]]):
-        button_grid[i[0]][i[1]].configure(bg=GREEN)
+        letter_label = Label(button_grid[i[0]][i[1]], text=printed[index][count:count+1].upper(), bg=GREEN, fg=BLACK, font=("Calibri", 50))
+        letter_label.grid(row=0, column=0)
+        count = count+1
         root.update()
 
 
@@ -179,6 +183,7 @@ for i in range(14):
             if j.split(" - ")[0] not in printed:
                 print(f"{index}. {j}")
                 printed[j.split(" - ")[0]] = 1
+                printed[index] = j.split(" - ")[0]
                 printed_list.append(j.split(" - ")[0])
                 index = index + 1
 
